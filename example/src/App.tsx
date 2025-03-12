@@ -9,7 +9,7 @@ export default function App() {
   ];
 
   return (
-    <View style={styles.container}>
+    <View>
       <Text style={styles.title}>Result:</Text>
       <ReelView data={reels} />
     </View>
