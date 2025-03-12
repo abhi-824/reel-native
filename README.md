@@ -10,6 +10,22 @@ Reelify your content without thinking about the gestures, positioning, etc. whil
 npm install reel-native
 ```
 
+For testing out on example app:
+
+```sh
+Run the example app on iOS:
+
+  $ yarn example ios
+
+Run the example app on Android:
+
+  $ yarn example android
+
+Run the example app on Web:
+
+  $ yarn example web
+```
+
 ---
 
 ## Plan
