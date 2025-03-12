@@ -1,12 +1,17 @@
-import { multiply } from 'reel-native';
+import { ReelView } from 'reel-native';
 import { Text, View, StyleSheet } from 'react-native';
 
-const result = multiply(3, 7);
-
 export default function App() {
+  const reels = [
+    <Text style={styles.reelText}>Reel 1: Hello World</Text>,
+    <Text style={styles.reelText}>Reel 2: React Native is awesome!</Text>,
+    <Text style={styles.reelText}>Reel 3: Swipe up for more</Text>,
+  ];
+
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text style={styles.title}>Result:</Text>
+      <ReelView data={reels} />
     </View>
   );
 }
@@ -16,5 +21,15 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginBottom: 10,
+  },
+  reelText: {
+    fontSize: 18,
+    textAlign: 'center',
+    marginVertical: 20,
   },
 });
